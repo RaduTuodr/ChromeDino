@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "author": "Radu Tudor",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 211.8, "left": -29.4, "attrs": {} },
+    { "type": "wokwi-lcd1602", "id": "lcd", "top": 3.43, "left": 16, "attrs": {} }
+  ],
+  "connections": [
+    [ "uno:GND.1", "lcd:VSS", "black", [ "v-51", "*", "h0", "v18" ] ],
+    [ "uno:GND.1", "lcd:K", "black", [ "v-51", "*", "h0", "v18" ] ],
+    [ "uno:GND.1", "lcd:RW", "black", [ "v-51", "*", "h0", "v18" ] ],
+    [ "uno:5V", "lcd:VDD", "red", [ "v16", "h-16" ] ],
+    [ "uno:5V", "lcd:A", "red", [ "v16", "h-16" ] ],
+    [ "uno:5V", "r1:2", "red", [ "v16", "h-118", "v-244", "h256.2", "v-21.7" ] ],
+    [ "uno:12", "lcd:RS", "blue", [ "v-16", "*", "h0", "v20" ] ],
+    [ "uno:11", "lcd:E", "purple", [ "v-20", "*", "h0", "v20" ] ],
+    [ "uno:10", "lcd:D4", "green", [ "v-38.4", "h19.9" ] ],
+    [ "uno:9", "lcd:D5", "brown", [ "v-28.8", "h19.9" ] ],
+    [ "uno:8", "lcd:D6", "gold", [ "v-19.2", "h19.4" ] ],
+    [ "uno:7", "lcd:D7", "gray", [ "v-9.6", "h12.9" ] ]
+  ],
+  "dependencies": {}
+}
